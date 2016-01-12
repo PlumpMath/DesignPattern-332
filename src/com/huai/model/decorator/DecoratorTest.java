@@ -9,8 +9,6 @@ public class DecoratorTest {
         ConcreteDecorator decorator = new ConcreteDecorator(component);
         decorator.doSomething();
     }
-
-
 }
 
 interface Component{
