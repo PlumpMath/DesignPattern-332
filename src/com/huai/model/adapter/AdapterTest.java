@@ -1,6 +1,11 @@
 package com.huai.model.adapter;
 
 /**
+ * 适配器模式
+ * <p>Source类的接口是SourceInterface，为了与接口Targetable兼容，
+ * 定义了一个适配器类Adapter，这个类继承了Source类，同时实现了Targetable，这样，
+ * Source就能通过Adapter类兼容于Targetable接口
+ * </p>
  * Created by liangyh on 16-1-2.
  */
 public class AdapterTest {
@@ -11,7 +16,11 @@ public class AdapterTest {
     }
 }
 
-class Source{
+interface SourceInterface{
+    void method1();
+}
+//被适配的类
+class Source implements SourceInterface{
     public void method1(){
         System.out.println("method 1");
     }
