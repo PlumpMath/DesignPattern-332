@@ -30,6 +30,7 @@ class Boss{
 }
 
 class CgLibProxy implements  MethodInterceptor{
+
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         before();
